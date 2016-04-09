@@ -15,7 +15,8 @@ xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.co
     <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
     <init-param>
       <param-name>jersey.config.server.provider.packages</param-name>
-      <param-value>fr.bakhti.rest</param-value>
+      <param-value>com.netplanapp.controllers</param-value>
+<!-- 	<param-value>fr.bakhti.rest</param-value> -->
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
