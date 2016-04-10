@@ -19,13 +19,15 @@ public class SuiviController {
 			
 			SuiviServiceImpl suivisave = new SuiviServiceImpl();
 			suivisave.saveSuiviService(desc);
-			//return "<?xml version=\"1.0\"?>"+"<> Hello Jersey hhhzzzzz "+"</hello>";	
 		}
 		
+		@GET
+		@Path("/authent/{desc: .*}")
+		public int authentConroller(@PathParam("nom") String nom, @PathParam("pass") String pass) throws SQLException{
+			
+			SuiviServiceImpl suiviauth = new SuiviServiceImpl();
+			suiviauth.authSuiviService(nom, pass);
+			return 1;
+		}
 
-
-	
-
-	
-	
 }
